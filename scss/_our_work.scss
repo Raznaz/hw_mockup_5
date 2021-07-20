@@ -1,0 +1,95 @@
+#about-us {
+  padding: 0 20px;
+  background-color: $white;
+  order: 2;
+  text-align: center;
+
+  .about-us__title {
+    text-transform: uppercase;
+  }
+
+  .about-us__text {
+    padding: 20px 0;
+  }
+}
+
+.aside-left {
+  flex: 0 0 210px;
+  text-align: center;
+  background-color: $rose;
+  order: 1;
+}
+
+.aside-right {
+  text-align: center;
+  flex: 0 0 210px;
+  background-color: $blue;
+  order: 3;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.about-us__cards {
+  margin-bottom: 40px;
+}
+
+.cards-item {
+  display: flex;
+  flex-basis: calc(100% / 3);
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 20px;
+
+  &__img-container {
+    width: 150px;
+    border: 15px solid $rose;
+    border-radius: 50%;
+    margin: 10px auto;
+  }
+
+  &__item-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+
+  &__title {
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    color: rgb(126, 126, 126);
+  }
+
+  &__link {
+    width: 100px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: $rose;
+    border-radius: 20px;
+    transition: background-color 0.4s ease;
+    align-self: center;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $blue;
+    }
+  }
+}
